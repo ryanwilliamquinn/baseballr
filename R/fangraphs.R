@@ -279,7 +279,7 @@ fg_park <- function(yr) {
 fg_brucie <- function() {
   message('Data courtey of FanGraphs.com. Please consider supporting FanGraphs by purchasing a membership: https://plus.fangraphs.com/product/fangraphs-membership/?switch-subscription=254671&item=85029&_wcsnonce=3e893e9b53&auto-switch=true')
 
-  read_html(https://www.fangraphs.com/leaders.aspx?pos=all&stats=bat&lg=all&qual=0&type=1&season=2021&month=1000&season1=2021&ind=0&team=0,ts&rost=0&age=0&filter=&players=0&startdate=2021-08-01&enddate=2021-08-07) %>%
+  read_html("https://www.fangraphs.com/leaders.aspx?pos=all&stats=bat&lg=all&qual=0&type=1&season=2021&month=1000&season1=2021&ind=0&team=0,ts&rost=0&age=0&filter=&players=0&startdate=2021-08-01&enddate=2021-08-07") %>%
     html_node(xpath = '//*[(@id = "LeaderBoard1_dg1_ctl00")]') %>%
     html_table %>%
     setNames(c("PA"))
