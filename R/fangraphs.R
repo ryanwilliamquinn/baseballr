@@ -276,6 +276,9 @@ fg_park <- function(yr) {
 
 }
 
+#' @rdname fg_guts
+#' @export
+
 fg_brucie <- function() {
   message('Data courtey of FanGraphs.com. Please consider supporting FanGraphs by purchasing a membership: https://plus.fangraphs.com/product/fangraphs-membership/?switch-subscription=254671&item=85029&_wcsnonce=3e893e9b53&auto-switch=true')
 
